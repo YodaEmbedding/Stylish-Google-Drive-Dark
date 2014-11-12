@@ -1,0 +1,313 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+
+@-moz-document domain("drive.google.com") {
+
+  body, .drive_main_page {
+    background: #333 !important;
+  }
+  
+  input {
+    background: #444 !important;
+    color: #aaa !important;
+  }
+  
+/* Header bar */
+  .gb_Nc .gb_Sb {
+    /*home_sidebar_color*/ /*previously #555*/
+    background: /*[[home_sidebar_color]]*/ !important;
+  }
+  
+  #gb#gb a.gb_A, #gb#gb a.gb_c, #gb#gb a.gb_d {
+    color: #aaa !important;
+  }
+  
+  .gbqfqw {
+    background: #444 !important;
+  }
+  
+/* Toolbar */
+  .a-O-G,
+  .ndfHFb-tJHJj-ZMv3u /*old*/ {
+    /* quick hack which I should fix later */
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
+    -webkit-filter: invert(100%);
+    
+    background: #fdfdfd !important;
+  }
+  
+/* Files */
+/* List view */
+  .a-u,
+  .ndfHFb-jyrRxf /*old*/ {
+    /*home_list_color*/
+    background: /*[[home_list_color]]*/ !important;
+    color: #eee !important;
+  }
+  
+  /* List view folder background */
+  .a-u-n.a-u-qb-Si,
+  .ndfHFb-jyrRxf-haAclf.ndfHFb-jyrRxf-SfQLQb-pk6n9 /*old*/ {
+    /*home_list_color*/
+    background: /*[[home_list_color]]*/ !important;
+  }
+  
+  /* List view sort bar */
+  .a-u-O,
+  .ndfHFb-jyrRxf-tJHJj /*old*/ {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
+    -webkit-filter: invert(100%);
+
+    /*
+    background: #222 !important;
+    color: #aaa !important;
+    */
+
+    background: #fcfcfc !important;
+  }
+  
+/* Grid view */
+  /* Grid view tabs */
+  .l-v-m-d-n,
+  .l-v-m-K-n,
+  .eizQhe-ObfsIf-yEEHq-r4nke-haAclf /*old*/ {
+    background: #222 !important;
+  }
+  
+  /* Grid view document names */
+  .l-v-K,
+  .eizQhe-ObfsIf-r4nke /*old*/ {
+    color: #ddd !important;
+  }
+  
+/* Left Sidebar */
+  .a-db-Aa,
+  .ndfHFb-k77Iif-DARUcf /*old*/ {
+    /*home_sidebar_color*/
+    background: /*[[home_sidebar_color]]*/ !important;
+    color: #eee !important;
+  }
+  
+/* Right sidebar */
+  .a-Kd-n,
+  .ndfHFb-PvRhvb-haAclf /*old*/ {
+    /*home_sidebar_color*/
+    background: /*[[home_sidebar_color]]*/ !important;
+  }
+  
+  /* Document Title */
+  .a-Xf-K-R {
+    color: #eee !important;
+  }
+  
+  /* Document Details */
+  .l-q-Ac-Bj {
+    color: #eee !important;
+  }
+  
+  /* Selected Tab */
+  .a-Kd-L-G > .j-L-G > .j-L.j-L-ga {
+    color: #aaa !important;
+  }
+  
+  /* Unselected Tab */
+  .a-Kd-L-G > .j-L-G > .j-L {
+    color: #888 !important;
+  }
+  
+  /* Activity Tab */
+  
+  .w-t-n {
+    background: #202020 !important;
+  }
+  
+  /* Activity Content Headings ("Earlier this week") */
+  .w-y-qd-K {
+    color: #aaa !important;
+  }
+  
+  .w-t-vp-O .w-y-qd-K {
+    background: #202020 !important;
+    opacity: 0.9 !important;
+  }
+  
+  /* Activity Content */
+  .w-y {
+    background-color: #333 !important;
+  }
+  
+  /* Activity Content Document Names */
+  .w-y-q-n {
+    color: #aaa !important;
+  }
+  
+  /* Activity Content Dates */
+  .w-y-lq {
+    color: #888 !important;
+  }
+  
+  /* Activity Content Action ("You created an item in") */
+  .w-y-q-O {
+    color: #aaa !important;
+  }
+  
+  /* old */
+  
+  .ndfHFb-n2GQD-r4nke-V1ur5d /*old*/ {
+    color: #eee !important;
+  }
+  
+  .ndfHFb-PvRhvb-AznF2e-ZMv3u > .VIpgJd-AznF2e-ZMv3u > .VIpgJd-AznF2e /*old*/ {
+    color: #ddd !important;
+  }
+  
+  .Z0Arqf-rymPhb-haAclf /*old*/ {
+    background: #202020 !important;
+  }
+  
+  .Z0Arqf-rymPhb-TJEFFc-tJHJj .Z0Arqf-yLHjwb-LS81yb-r4nke /*old*/ {
+    background: #202020 !important;
+    opacity: 0.9 !important;
+  }
+  
+  .Z0Arqf-yLHjwb /*old*/ {
+    background: #444 !important;
+  }
+  
+  .Z0Arqf-yLHjwb-MZArnb-tJHJj /*old*/ {
+    color: #eee !important;
+  }
+  
+  .Z0Arqf-yLHjwb-vtn22d /*old*/ {
+    color: #aaa !important;
+  }
+  
+  .Z0Arqf-yLHjwb-MZArnb-haAclf /*old*/ {
+    color: #ccc !important;
+  }
+}
+
+
+@-moz-document domain("docs.google.com")
+/* , domain("drive.google.com") regexp("https?://(www\.)?docs.google.com.*?") */
+{
+  
+  /* PAGE */
+  
+  .kix-page,
+  /* .kix-page *, */
+  .kix-page-content-wrapper,
+  .kix-page-paginated {
+    /*page_bgrnd_color*/
+    background: /*[[page_bgrnd_color]]*/ !important;
+  }
+  
+  .kix-page span,
+  .kix-wordhtmlgenerator-word-node {
+    /*normal_text_color*/
+    color: /*[[normal_text_color]]*/ !important;
+  }
+  
+  .kix-cursor-caret {
+    display: block !important;
+
+    /*caret_border_color*/
+    border-color: /*[[caret_border_color]]*/ !important;
+
+    /*caret_glow_color*/
+    box-shadow: 0 0 10px /*[[caret_glow_color]]*/,
+                0 0 20px /*[[caret_glow_color]]*/,
+                0 0 40px /*[[caret_glow_color]]*/;
+  }
+  
+  /* Background */
+  
+  .docs-vis-ref-editor-container #docs-editor {
+    background: #111 !important;
+  }
+  
+  /* Navigation and Menu */
+  
+  #docs-chrome {
+    background: #333 !important;
+    color: #999 !important;
+  }
+  
+  .docs-vis-ref-chrome .docs-title-inner {
+    color: #777 !important;
+  }
+  
+  /* Toolbar strip */
+  
+  .docs-vis-ref-chrome #docs-toolbar-wrapper {
+    background: #444 !important;
+  }
+  
+  .docs-vis-ref-chrome .goog-toolbar-separator.goog-inline-block {
+    border-left: 1px solid #666 !important;
+  }
+  
+  .docs-vis-ref-chrome #docs-toolbar-wrapper {
+    border-color: #777 !important;
+    box-shadow: 0px 1px 0px 0px #808080 inset !important;
+  }
+  
+  .goog-toolbar-button, .goog-toolbar-menu-button, .goog-toolbar-combo-button-input {
+    color: #aaa !important;
+  }
+  
+  .goog-menu {
+    background: #555 !important;
+    box-shadow: 0 0 1px #444,
+                0 0 2px #444,
+                0 0 4px #444;
+    border: 1px solid #666 !important;
+  }
+  
+  .goog-menuitem, .goog-tristatemenuitem, .goog-filterobsmenuitem {
+    color: #ddd !important;
+  }
+  
+  .docs-icon-img:before {
+    /* invert icon colors */
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
+    -webkit-filter: invert(100%);
+  }
+  
+  .goog-toolbar-button-selected, .goog-toolbar-button-checked, .goog-toolbar-menu-button-open {
+    background-image: -moz-linear-gradient(center top , #888, #8F8F8F);
+  }
+  
+  .goog-toolbar-button-hover, .goog-toolbar-menu-button-hover {
+    background-image: -moz-linear-gradient(center top , #999, #9F9F9F);
+  }
+  
+  /* Toolbar Menu Search */
+  .goog-toolbar {
+    background: #444 !important;
+  }
+  
+  .docs-omnibox-input {
+    background: #333 !important;
+    color: #aaa !important;
+  }
+  
+  .jfk-textinput {
+    border-color: #555 !important;
+  }
+  
+  .docs-omnibox-autocomplete .ac-renderer {
+    background: #555 !important;
+    box-shadow: 0 0 1px #444,
+                0 0 2px #444,
+                0 0 4px #444;
+    border: 1px solid #666 !important;
+  }
+  
+  .docs-omnibox-autocomplete .ac-active {
+    background: #333 !important;
+  }
+  
+  /* Popup menus */
+  /* loolololololl one day I shall do this or if someone gives me code in exchange for pixs pls or vice versa jkjkjkjk */
+}

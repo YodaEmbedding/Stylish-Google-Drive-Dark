@@ -1,0 +1,17 @@
+{
+  "name": "google-drive-dark-stylish",
+  "version": "1.0.0",
+  "description": "Google Drive Dark theme for Stylish",
+  "homepage": "https://github.com/muntoo/google-drive-dark-stylish",
+  "contributors": [
+    "muntoo <muntoonxt@gmail.com>"
+  ],
+  "bugs": {
+    "url": "https://github.com/muntoo/google-drive-dark-stylish/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muntoo/google-drive-dark-stylish.git"
+  },
+  "license": "GPL"
+}
