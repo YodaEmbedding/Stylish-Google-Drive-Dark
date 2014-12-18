@@ -1,0 +1,11 @@
+
+To do:
+Drive Home maintenance
+Add Enable/Disable switches for Drive Home, Docs
+Google Sheets
+
+
+Known bugs:
+Drive Home -> Fix borders
+Drive Home -> Fix hover highlights
+Drive Home -> Fix toolbar logo/user thumbnail invert
