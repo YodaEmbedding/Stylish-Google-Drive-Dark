@@ -13,15 +13,13 @@
   }
   
 /* Header bar */
-  .gb_Mc .gb_Qb,
-  .gb_Nc .gb_Sb /*old*/
-  {
-    /*home_sidebar_color*/ /*previously #555*/
+  .gb_Pc .gb_Ub {
+    /*home_sidebar_color*/
     background: #404040 !important;
   }
   
   /* +<Google+ Username> */
-  #gb#gb a.gb_A, #gb#gb a.gb_c, #gb#gb a.gb_d {
+  #gb#gb a.gb_A, #gb#gb a.gb_c, #gb#gb a.gb_d, #gb#gb a.gb_e, #gb#gb a.gb_f {
     color: #aaa !important;
   }
   
@@ -31,9 +29,7 @@
   }
   
 /* Toolbar */
-  .a-Q-I,
-  .a-O-G, /*old*/
-  .ndfHFb-tJHJj-ZMv3u /*old*/ {
+  .a-R-K {
     /* quick hack which I should fix later */
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
     -webkit-filter: invert(100%);
@@ -43,143 +39,123 @@
   
 /* Files */
 /* List view */
-  .a-t,
-  .a-u, /*old*/
-  .ndfHFb-jyrRxf /*old*/ {
+  .a-u {
     /*home_list_color*/
     background: #333333 !important;
-    color: #eee !important;
+    color: #ddd !important;
   }
   
   /* List view folder background */
-  .a-t-m.a-t-ub-Ei,
-  .a-u-n.a-u-qb-Si, /*old*/
-  .ndfHFb-jyrRxf-haAclf.ndfHFb-jyrRxf-SfQLQb-pk6n9 /*old*/ {
+  .a-u-m.a-u-yb-Oi {
     /*home_list_color*/
     background: #333333 !important;
   }
   
   /* List view sort bar */
-  .a-t-Q,
-  .a-u-O, /*old*/
-  .ndfHFb-jyrRxf-tJHJj /*old*/ {
+  .a-u-R {
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
     -webkit-filter: invert(100%);
-
-    /*
-    background: #222 !important;
-    color: #aaa !important;
-    */
 
     background: #fcfcfc !important;
   }
   
 /* Grid view */
   /* Grid view tabs */
-  .k-v-n-d-m, .k-v-n-L-m,
-  .l-v-m-d-n, .l-v-m-K-n, /*old*/
-  .eizQhe-ObfsIf-yEEHq-r4nke-haAclf /*old*/ {
+  .k-v-n-M-m {
     background: #272727 !important;
   }
   
   /* Grid view document names */
-  .k-v-L,
-  .l-v-K, /*old*/
-  .eizQhe-ObfsIf-r4nke /*old*/ {
+  .k-v-M {
     color: #ddd !important;
   }
   
 /* Left Sidebar */
-  .a-gb-Ba,
-  .a-db-Aa, /*old*/
-  .ndfHFb-k77Iif-DARUcf /*old*/ {
+  .a-jb-Ha {
     /*home_sidebar_color*/
     background: #404040 !important;
-    color: #eee !important;
+    color: #ddd !important;
+  }
+
+  /* Hovered item */
+  :not(.a-U-ag-da) > .a-U-H:hover {
+    background: none !important;
+  }
+
+  /* Selected item */
+  .a-U-ag-da > .a-U-H {
+    background-color: #4285F4 !important;
+  }
+
+  /* Selected item text */
+  .a-U-ag-da > .a-U-H > .a-U-H-s {
+    color: #E9E5D4 !important;
   }
   
 /* Right sidebar */
-  .a-Sd-m,
-  .a-Kd-n, /*old*/
-  .ndfHFb-PvRhvb-haAclf /*old*/ {
+  /* Sidebar Background */
+  .a-Ud-m {
     /*home_sidebar_color*/
     background: #404040 !important;
   }
   
   /* Document Title */
-  .a-eg-L-P,
-  .a-Xf-K-R /*old*/
-  {
-    color: #eee !important;
-  }
-  
-  /* Document Details */
-  .k-q-fc-pj,
-  .l-q-Ac-Bj /*old*/
-  {
-    color: #eee !important;
+  .a-ng-M-P {
+    color: #ddd !important;
   }
   
   /* Selected Tab */
-  .ec-Na-Hb .a-Sd-N-I > .j-N-I > .j-N.j-N-da,
-  .a-Kd-L-G > .j-L-G > .j-L.j-L-ga /*old*/
-  {
+  .a-Ud-N-K > .j-N-K > .j-N.j-N-da {
     color: #aaa !important;
   }
   
   /* Unselected Tab */
-  .a-Sd-N-I > .j-N-I > .j-N,
-  .a-Kd-L-G > .j-L-G > .j-L /*old*/
-  {
+  .a-Ud-N-K > .j-N-K > .j-N {
     color: #888 !important;
+  }
+
+  /* Details Tab */
+
+  /* Details Text */
+  .k-q-jc-Dj {
+    color: #ddd !important;
   }
   
   /* Activity Tab */
   
-  .w-u-m,
-  .w-t-n /*old*/
-  {
+  /* Activity Content Background */
+  .w-t-m {
     background: #202020 !important;
   }
   
   /* Activity Content Headings ("Earlier this week") */
-  .w-y-vd-L,
-  .w-y-qd-K /*old*/
-  {
+  .w-y-Bd-M {
     color: #aaa !important;
   }
   
   /* Activity Content Heading - Scrolled up*/
-  .w-u-Jp-Q .w-y-vd-L,
-  .w-t-vp-O .w-y-qd-K /*old*/ {
+  .w-t-hq-R .w-y-Bd-M {
     background: #202020 !important;
     opacity: 0.9 !important;
   }
   
   /* Activity Content */
-  .w-y
-  {
+  .w-y {
     background-color: #333 !important;
   }
   
   /* Activity Content Document Names */
-  .w-y-q-m,
-  .w-y-q-n /*old*/
-  {
+  .w-y-q-m {
     color: #aaa !important;
   }
   
   /* Activity Content Dates */
-  .w-y-Iq,
-  .w-y-lq /*old*/
-  {
+  .w-y-kr {
     color: #888 !important;
   }
   
   /* Activity Content Action ("You created an item in") */
-  .w-y-q-Q,
-  .w-y-q-O /*old*/
-  {
+  .w-y-q-R {
     color: #aaa !important;
   }
   
@@ -192,7 +168,7 @@
   
   
   .ndfHFb-n2GQD-r4nke-V1ur5d /*old*/ {
-    color: #eee !important;
+    color: #ddd !important;
   }
   
   .ndfHFb-PvRhvb-AznF2e-ZMv3u > .VIpgJd-AznF2e-ZMv3u > .VIpgJd-AznF2e /*old*/ {
@@ -213,7 +189,7 @@
   }
   
   .Z0Arqf-yLHjwb-MZArnb-tJHJj /*old*/ {
-    color: #eee !important;
+    color: #ddd !important;
   }
   
   .Z0Arqf-yLHjwb-vtn22d /*old*/ {
