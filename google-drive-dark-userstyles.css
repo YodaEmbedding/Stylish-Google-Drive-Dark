@@ -231,13 +231,16 @@
 {
   
   /* PAGE */
-  
+
   .kix-page,
   /* .kix-page *, */
-  .kix-page-content-wrapper,
-  .kix-page-paginated {
+  .kix-page-content-wrapper {
     /*page_bgrnd_color*/
     background: /*[[page_bgrnd_color]]*/ !important;
+  }
+
+  .kix-page-paginated {
+    box-shadow: none !important;
   }
   
   .kix-page span,
@@ -253,14 +256,14 @@
     border-color: /*[[caret_border_color]]*/ !important;
 
     /*caret_glow_color*/
-    box-shadow: 0 0 10px /*[[caret_glow_color]]*/,
-                0 0 20px /*[[caret_glow_color]]*/,
-                0 0 40px /*[[caret_glow_color]]*/;
+    box-shadow: 0 0 0px /*[[caret_glow_color]]*/,
+                0 0 15px /*[[caret_glow_color]]*/,
+                0 0 50px /*[[caret_glow_color]]*/;
   }
   
   /* Background */
   
-  .docs-vis-ref-editor-container #docs-editor {
+  #docs-editor {
     background: #111 !important;
   }
   
@@ -271,21 +274,19 @@
     color: #999 !important;
   }
   
-  .docs-vis-ref-chrome .docs-title-inner {
+  .docs-title-inner {
     color: #777 !important;
   }
   
   /* Toolbar strip */
   
-  .docs-vis-ref-chrome #docs-toolbar-wrapper {
-    background: #444 !important;
-  }
-  
-  .docs-vis-ref-chrome .goog-toolbar-separator.goog-inline-block {
+  .goog-toolbar-separator.goog-inline-block {
     border-left: 1px solid #666 !important;
   }
   
-  .docs-vis-ref-chrome #docs-toolbar-wrapper {
+  #docs-toolbar-wrapper {
+    background-color: #444 !important;
+    background-image: none !important;
     border-color: #777 !important;
     box-shadow: 0px 1px 0px 0px #808080 inset !important;
   }
@@ -347,6 +348,6 @@
   }
   
   /* Popup menus */
-  /* loolololololl one day I shall do this or if someone gives me code in exchange for pixs pls or vice versa jkjkjkjk */
+  /* Will be implemented 6-8 weeks from whenever it is that you read this. */
 }
 
