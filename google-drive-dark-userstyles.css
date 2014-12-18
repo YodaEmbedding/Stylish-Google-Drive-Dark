@@ -1,7 +1,7 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
 
-@-moz-document domain("drive.google.com") {
+@-moz-document /*[[theme_drive]]*/ {
 
   body, .drive_main_page {
     background: #333 !important;
@@ -162,9 +162,7 @@
 }
 
 
-@-moz-document domain("docs.google.com")
-/* , domain("drive.google.com") regexp("https?://(www\.)?docs.google.com.*?") */
-{
+@-moz-document /*[[theme_docs]]*/ {
   
   /* PAGE */
 
@@ -285,6 +283,6 @@
   
   /* Popup menus */
   /* Will be implemented 6-8 weeks from whenever it is that you read this. */
-  
+
 }
 

@@ -158,12 +158,11 @@
   .w-y-q-R {
     color: #aaa !important;
   }
+
 }
 
 
-@-moz-document domain("docs.google.com")
-/* , domain("drive.google.com") regexp("https?://(www\.)?docs.google.com.*?") */
-{
+@-moz-document domain("docs.google.com") {
   
   /* PAGE */
 
@@ -284,5 +283,6 @@
   
   /* Popup menus */
   /* Will be implemented 6-8 weeks from whenever it is that you read this. */
+
 }
 

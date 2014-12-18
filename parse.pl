@@ -5,6 +5,8 @@ use warnings;
 
 # Find => Replace
 my %data = (
+	"/*[[theme_drive]]*/"   => "domain(\"drive.google.com\")",
+	"/*[[theme_docs]]*/"    => "domain(\"docs.google.com\")",
 	"/*[[page_bgrnd_color]]*/"   => "#333333",
 	"/*[[normal_text_color]]*/"  => "#DDDDDD",
 	"/*[[caret_border_color]]*/" => "#CC9922",
