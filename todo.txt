@@ -1,7 +1,13 @@
+Notes:
+Darkened ruler
+Fixed view when Page layout disabled
+Fixed equations toolbar
+
 
 To do:
 Add Enable/Disable switches for Drive Home, Docs
 Google Sheets
+https?://docs.google.com/document/u/\d+/
 
 
 Known bugs:

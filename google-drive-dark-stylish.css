@@ -194,11 +194,39 @@
                 0 0 15px #FFBB55,
                 0 0 50px #FFBB55;
   }
+
+  /* Print Layout disabled fixes */
+
+  .kix-paginateddocumentplugin-compact-mode {
+    border: 1px solid #111 !important;
+  }
+
+    /* Unique selector for .docs-ui-unprintable */
+  .kix-paginateddocumentplugin > div:nth-child(3) {
+    background: #333333 !important;
+  }
   
   /* Background */
   
   #docs-editor {
     background: #111 !important;
+  }
+
+  /* Ruler */
+  #kix-ruler {
+    border-bottom: none !important;
+  }
+
+  .kix-ruler-background-inner {
+    background: #444 !important;
+  }
+
+  .kix-ruler-face-number {
+    color: #aaa !important;
+  }
+
+  .kix-ruler-face-minor-division, .kix-ruler-face-major-division {
+    border-left: 1px solid #aaa !important;
   }
   
   /* Navigation and Menu */
@@ -253,6 +281,15 @@
   
   .goog-toolbar-button-hover, .goog-toolbar-menu-button-hover {
     background-image: -moz-linear-gradient(center top , #999, #9F9F9F);
+  }
+
+  /* Equation toolbar */
+  .kix-equation-toolbar-icon, .kix-equation-toolbar-palette {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
+  }
+
+  .kix-equation-toolbar-palette-item {
+    border-color: 1px solid #444 !important;
   }
   
   /* Toolbar Menu Search */
