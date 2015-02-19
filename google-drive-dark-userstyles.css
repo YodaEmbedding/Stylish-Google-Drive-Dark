@@ -13,13 +13,13 @@
   }
   
 /* Header bar */
-  .gb_Pc .gb_Ub {
+  .gb_Sc .gb_Xb {
     /*home_sidebar_color*/
     background: /*[[home_sidebar_color]]*/ !important;
   }
   
   /* +<Google+ Username> */
-  #gb#gb a.gb_A, #gb#gb a.gb_c, #gb#gb a.gb_d, #gb#gb a.gb_e, #gb#gb a.gb_f {
+  #gb#gb a.gb_f, #gb#gb a.gb_g {
     color: #aaa !important;
   }
   
