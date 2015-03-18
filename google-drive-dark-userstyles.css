@@ -13,13 +13,13 @@
   }
   
 /* Header bar */
-  .gb_Sc .gb_Xb {
+  .gb_Xc .gb_3b {
     /*home_sidebar_color*/
     background: /*[[home_sidebar_color]]*/ !important;
   }
   
   /* +<Google+ Username> */
-  #gb#gb a.gb_f, #gb#gb a.gb_g {
+  #gb#gb a.gb_k, #gb#gb a.gb_l {
     color: #aaa !important;
   }
   
@@ -29,13 +29,27 @@
   }
   
 /* Toolbar */
+  /* Quick hack */
   .a-R-K {
-    /* quick hack which I should fix later */
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
     -webkit-filter: invert(100%);
     
     background: #fdfdfd !important;
   }
+
+/*
+  .a-R-K {
+  	background: /*[[home_list_color]]* !important;
+  }
+
+  .a-k-Ra .a-pa-Ra-ye, .a-k-Ra .a-pa-Ra-Zi, /* Location *
+  .a-d-e /* Buttons * {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
+    -webkit-filter: invert(100%);
+    
+    background: #fdfdfd !important;
+  }
+*/
   
 /* Files */
 /* List view */
