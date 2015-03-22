@@ -281,8 +281,12 @@
     color: #ddd !important;
   }
 
+  .formula-content {
+    color: #DA64FF !important;
+  }
+
   .formula-content > .insert-range-indicator {
-    background: #3E3F00 !important;
+    background: #6D6F00 !important;
   }
 
   .default-formula-text-color {
@@ -291,6 +295,12 @@
 
   .formula-content > .number {
     color: #FF93F6 !important;
+  }
+
+  .formula-content > .match-paren {
+    background-color: #666 !important;
+    font-weight: 900 !important;
+    letter-spacing: 2px !important;
   }
 
   .formula-content > .inactive {
@@ -347,21 +357,44 @@
   /* Sheets bar */
   .grid-bottom-bar {
     background-color: #1A1A1A !important;
+    border-top: 1px solid #777 !important;
   }
 
   .docs-sheet-tab {
     background-color: #222 !important;
     color: #bbb !important;
+    border-color: #777 #373737 #333 #373737 !important;
   }
 
   .docs-sheet-tab-hover {
     background-color: #444 !important;
     color: #bbb !important;
+    border-color: #777 #373737 #333 #373737 !important;
   }
 
   .docs-sheet-active-tab {
     background-color: #444 !important;
     color: #bbb !important;
+    border-color: #777 #373737 #333 #373737 !important;
+  }
+
+  .docs-sheet-button-inner-box:hover, .docs-sheet-button-outer-box:hover {
+    background-color: #444 !important;
+    border-color: #444 !important;
+  }
+
+  .docs-sheet-button-icon:hover {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
+  }
+
+  /* Tour button */
+  .docs-sheet-message-container-button {
+    background: #222 !important;
+  }
+
+  #docs-sheet-message-container,
+  .docs-sheet-status-container {
+    border-left: 1px solid #333 !important;
   }
 
 }
@@ -378,6 +411,12 @@
   .grid-container {
     background-color: #111 !important;
   }
+
+  .input-box {
+    background-color: #505050 !important;
+    color: #eee !important;
+  }
+
 }
 
 
