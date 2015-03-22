@@ -7,7 +7,7 @@ use warnings;
 my %data = (
 	"/*[[theme_drive]]*/"           => "domain(\"drive.google.com\"), url-prefix(\"http://docs.google.com/document/u/\"), url-prefix(\"https://docs.google.com/document/u/\"), url-prefix(\"http://docs.google.com/spreadsheets/u/\"), url-prefix(\"https://docs.google.com/spreadsheets/u/\")",
 	"/*[[theme_docs]]*/"            => "url-prefix(\"http://docs.google.com/document/d/\"), url-prefix(\"https://docs.google.com/document/d/\")",
-	"/*[[theme_sheets]]*/"          => "url-prefix(\"http://docs.google.com/spreadsheets/d/\"), url-prefix(\"https://docs.google.com/spreadsheets/d/\")",
+	"/*[[theme_sheets]]*/"          => "url-prefix(\"http://docs.google.com/spreadsheets/d/\"), url-prefix(\"https://docs.google.com/spreadsheets/d/\"), url-prefix(\"http://docs.google.com/spreadsheet/\"), url-prefix(\"https://docs.google.com/spreadsheet/\")",
 	"/*[[theme_sheets_canvas]]*/"   => "url-prefix(\"http://docs.google.com/spreadsheets/d/\"), url-prefix(\"https://docs.google.com/spreadsheets/d/\"), url-prefix(\"http://docs.google.com/spreadsheet/\"), url-prefix(\"https://docs.google.com/spreadsheet/\")",
 	"/*[[page_bgrnd_color]]*/"      => "#333333",
 	"/*[[normal_text_color]]*/"     => "#DDDDDD",
