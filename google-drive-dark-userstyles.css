@@ -271,16 +271,6 @@
 
 @-moz-document /*[[theme_sheets]]*/ {
 
-  /* Canvas */
-  /* See http://www.w3.org/TR/selectors/#lex */
-  div[id*='grid-table-container'] > canvas {
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-0.8 0 0 0 0.84 0 -0.8 0 0 0.84 0 0 -0.8 0 0.84 0 0 0 1 0'/></filter></svg>#invert");
-  }
-
-  .grid-container {
-    background-color: #111 !important;
-  }
-
   /* Formula bar */
   #formula-bar {
     background: #333 !important;
@@ -374,6 +364,20 @@
     color: #bbb !important;
   }
 
+}
+
+
+@-moz-document /*[[theme_sheets_canvas]]*/ {
+
+  /* Canvas */
+  /* See http://www.w3.org/TR/selectors/#lex */
+  div[id*='grid-table-container'] > canvas {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-0.8 0 0 0 0.84 0 -0.8 0 0 0.84 0 0 -0.8 0 0.84 0 0 0 1 0'/></filter></svg>#invert");
+  }
+
+  .grid-container {
+    background-color: #111 !important;
+  }
 }
 
 

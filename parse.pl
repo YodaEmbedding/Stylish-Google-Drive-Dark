@@ -5,15 +5,16 @@ use warnings;
 
 # Find => Replace
 my %data = (
-	"/*[[theme_drive]]*/"   => "domain(\"drive.google.com\"), url-prefix(\"http://docs.google.com/document/u/\"), url-prefix(\"https://docs.google.com/document/u/\")",
-	"/*[[theme_docs]]*/"    => "url-prefix(\"http://docs.google.com/document/d/\"), url-prefix(\"https://docs.google.com/document/d/\")",
-	"/*[[theme_sheets]]*/"    => "url-prefix(\"http://docs.google.com/spreadsheets/d/\"), url-prefix(\"https://docs.google.com/spreadsheets/d/\")",
-	"/*[[page_bgrnd_color]]*/"   => "#333333",
-	"/*[[normal_text_color]]*/"  => "#DDDDDD",
-	"/*[[caret_border_color]]*/" => "#CC9922",
-	"/*[[caret_glow_color]]*/"   => "#FFBB55",
-	"/*[[home_sidebar_color]]*/" => "#404040",
-	"/*[[home_list_color]]*/"    => "#333333"
+	"/*[[theme_drive]]*/"           => "domain(\"drive.google.com\"), url-prefix(\"http://docs.google.com/document/u/\"), url-prefix(\"https://docs.google.com/document/u/\")",
+	"/*[[theme_docs]]*/"            => "url-prefix(\"http://docs.google.com/document/d/\"), url-prefix(\"https://docs.google.com/document/d/\")",
+	"/*[[theme_sheets]]*/"          => "url-prefix(\"http://docs.google.com/spreadsheets/d/\"), url-prefix(\"https://docs.google.com/spreadsheets/d/\")",
+	"/*[[theme_sheets_canvas]]*/"   => "url-prefix(\"http://docs.google.com/spreadsheets/d/\"), url-prefix(\"https://docs.google.com/spreadsheets/d/\")",
+	"/*[[page_bgrnd_color]]*/"      => "#333333",
+	"/*[[normal_text_color]]*/"     => "#DDDDDD",
+	"/*[[caret_border_color]]*/"    => "#CC9922",
+	"/*[[caret_glow_color]]*/"      => "#FFBB55",
+	"/*[[home_sidebar_color]]*/"    => "#404040",
+	"/*[[home_list_color]]*/"       => "#333333"
 );
 
 open(my $in, '<', 'google-drive-dark-userstyles.css') or die "Could not open file '$_' $!";
