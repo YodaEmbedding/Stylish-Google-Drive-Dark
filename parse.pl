@@ -7,6 +7,7 @@ use warnings;
 my %data = (
 	"/*[[theme_drive]]*/"   => "domain(\"drive.google.com\")",
 	"/*[[theme_docs]]*/"    => "domain(\"docs.google.com\")",
+	"/*[[theme_sheets]]*/"    => "url-prefix(\"https://docs.google.com/spreadsheets/d/\")",
 	"/*[[page_bgrnd_color]]*/"   => "#333333",
 	"/*[[normal_text_color]]*/"  => "#DDDDDD",
 	"/*[[caret_border_color]]*/" => "#CC9922",

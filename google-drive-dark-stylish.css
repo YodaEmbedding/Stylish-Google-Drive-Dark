@@ -337,3 +337,88 @@
 
 }
 
+
+@-moz-document url-prefix("https://docs.google.com/spreadsheets/d/") {
+
+  #\30 -grid-table-container > canvas/*:nth-child(3)*/ {
+
+    /*
+    Identity Matrix:
+    1 0 0 0 0
+    0 1 0 0 0
+    0 0 1 0 0
+    0 0 0 1 0
+
+    Inversion Matrix:
+    -1 0 0 0 1
+    0 -1 0 0 1
+    0 0 -1 0 1
+    0 0 0 1 0
+
+    Brightness Matrix:
+    0.33 0.33 0.33 0 0
+    0.33 0.33 0.33 0 0
+    0.33 0.33 0.33 0 0
+    0 0 0 1 0
+
+    Inverted Brightness Matrix:
+    -0.33 -0.33 -0.33 0 1
+    -0.33 -0.33 -0.33 0 1
+    -0.33 -0.33 -0.33 0 1
+    0 0 0 1 0
+
+    Inverted Brightness Matrix:
+    -0.33 -0.33 -0.33 0 1
+    -0.33 -0.33 -0.33 0 1
+    -0.33 -0.33 -0.33 0 1
+    0 0 0 1 0
+    (-0.33 -0.33 -0.33 0 1 -0.33 -0.33 -0.33 0 1 -0.33 -0.33 -0.33 0 1 0 0 0 1 0)
+    
+    Inverted Color Matrix...? I don't know what this is:
+    0 1 1 0 -1
+    1 0 1 0 -1
+    1 1 0 0 -1
+    0 0 0 1 0
+    (0 1 1 0 -1 1 0 1 0 -1 1 1 0 0 -1 0 0 0 1 0)
+
+    Luminance Inversion: 1 - (0.2126*R + 0.7152*G + 0.0722*B)   ( -0.2126 -0.7152 -0.0722  )
+
+    -1.2126 -0.7152 -0.0722 0 1.2126
+    -0.2126 -1.7152 -0.0722 0 1.7152
+    -0.2126 -0.7152 -1.0722 0 1.0722
+    0 0 0 1 0
+
+    -1.2126 -0.7152 -0.0722 0 1.2126    -0.2126 -1.7152 -0.0722 0 1.7152    -0.2126 -0.7152 -1.0722 0 1.0722 0 0 0 1 0
+    
+    Inversion = Identity + Brightness? - InvertedBrightness
+
+
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1.2126 -0.7152 -0.0722 0 1.2126    -0.2126 -1.7152 -0.0722 0 1.7152    -0.2126 -0.7152 -1.0722 0 1.0722 0 0 0 1 0'/></filter></svg>#invert");
+
+
+RGBA = (R,G,B,1-Lum) overlay background(0,0,0,1)
+
+Composition attempt
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='invert'><feColorMatrix result='invertedbrightness' in='SourceGraphic' type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0.33 0.33 0.33 1 0'/>   <feComposite in='SourceGraphic' in2='invertedbrightness' operator='arithmetic' k1='0' k2='1' k3='1' k4='0'/></filter></svg>#invert");
+
+Greyscale
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-0.33 -0.33 -0.33 0 1 -0.33 -0.33 -0.33 0 1 -0.33 -0.33 -0.33 0 1 0 0 0 1 0'/></filter></svg>#invert");
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='invert'><feColorMatrix in='SourceGraphic' type='matrix' values='-0.33 -0.33 -0.33 0 1 -0.33 -0.33 -0.33 0 1 -0.33 -0.33 -0.33 0 1 0 0 0 1 0'/></filter></svg>#invert");
+    */
+
+    
+    /*filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='brightnessInvert'><feColorMatrix in='SourceGraphic' type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -0.33 -0.33 -0.33 0 0.99'/></filter></svg>#brightnessInvert");*/
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='brightnessInvert'><feColorMatrix in='SourceGraphic' type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0.33 0.33 0.33 0 0.01'/></filter></svg>#brightnessInvert");
+
+
+
+/* Exploit background + opacity? Use alpha channel as luminance inversion? */
+
+ }
+
+  .grid-container {
+    background-color: #fff !important;
+  }
+
+}
+
