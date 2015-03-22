@@ -3,7 +3,7 @@
 
 @-moz-document /*[[theme_drive]]*/ {
 
-  body, .drive_main_page {
+  html, body, .drive_main_page {
     background: #333 !important;
   }
   
@@ -187,7 +187,8 @@
     background: /*[[page_bgrnd_color]]*/ !important;
   }
 
-  .kix-page-paginated {
+  .kix-page-paginated,
+  .kix-paginateddocumentplugin-compact-mode {
     box-shadow: none !important;
   }
   
@@ -242,7 +243,172 @@
   .kix-ruler-face-minor-division, .kix-ruler-face-major-division {
     border-left: 1px solid #aaa !important;
   }
+
+  /* Navigation and Menu */
+
+  /* Equation toolbar */
+  .kix-equation-toolbar-icon, .kix-equation-toolbar-palette {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
+  }
+
+  .kix-equation-toolbar-palette-item {
+    border-color: 1px solid #444 !important;
+  }
+
+  /* Toolbar Menu Search */
+  .goog-toolbar {
+    background: #444 !important;
+  }
   
+  .docs-omnibox-input {
+    background: #333 !important;
+    color: #aaa !important;
+  }
+  
+  .jfk-textinput {
+    border-color: #555 !important;
+  }
+  
+  .docs-omnibox-autocomplete .ac-renderer {
+    background: #555 !important;
+    box-shadow: 0 0 1px #444,
+                0 0 2px #444,
+                0 0 4px #444;
+    border: 1px solid #666 !important;
+  }
+  
+  .docs-omnibox-autocomplete .ac-active {
+    background: #333 !important;
+  }
+
+}
+
+
+@-moz-document /*[[theme_sheets]]*/ {
+
+  /* Canvas */
+  /* See http://www.w3.org/TR/selectors/#lex */
+  div[id*='grid-table-container'] > canvas {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-0.8 0 0 0 0.84 0 -0.8 0 0 0.84 0 0 -0.8 0 0.84 0 0 0 1 0'/></filter></svg>#invert");
+  }
+
+  .grid-container {
+    background-color: #111 !important;
+  }
+
+  /* Formula bar */
+  #formula-bar {
+    background: #333 !important;
+  }
+
+  #t-formula-bar-input {
+    background: #333 !important;
+    color: #ddd !important;
+  }
+
+  .formula-content > .insert-range-indicator {
+    background: #3E3F00 !important;
+  }
+
+  .default-formula-text-color {
+    color: #4ECFE4 !important;
+  }
+
+  .formula-content > .number {
+    color: #FF93F6 !important;
+  }
+
+  .formula-content > .inactive {
+    opacity: 0.7 !important;
+  }
+
+  /* Formula -> function autocomplete */
+  .waffle-ac-active {
+    background-color: #441020 !important;
+    border-top: 1px solid #333 !important;
+    border-bottom: 1px solid #333 !important;
+  }
+
+  .waffle-ac-renderer {
+    background-color: #333 !important;
+  }
+
+  .waffle-function-autocomplete-row-name {
+    color: #FF8888 !important;
+  }
+
+  .waffle-arguments-help-body {
+    border-top: 1px solid #4D353C !important;
+  }
+
+  .waffle-function-autocomplete-row-description {
+    color: #b7b7b7 !important;
+  }
+
+  /* Formula -> function help */
+  .waffle-arguments-help-title {
+    background-color: #220710 !important;
+    color: #FF8888 !important;
+  }
+
+  .waffle-arguments-help-popup {
+    background-color: #441020 !important;
+    color: #b7b7b7 !important;
+  }
+
+  .waffle-arguments-help-section-title {
+    /* background-color: #2a2a2a !important; */
+    color: #777 !important;
+  }
+
+  .waffle-arguments-help-parameter-active {
+    background-color: #3E3F00 !important;
+  }
+
+  /* Random white elements */
+  .grid-shim-bottom {
+    background-color: #636363 !important;
+  }
+
+  .gb_5,
+  .gbqfba:hover,
+  .dcs-j-dcs-l-dcs-qh,
+  .dcs-j-dcs-l-dcs-qh:active,
+  .dcs-j-dcs-l-dcs-we,
+  .dcs-vd-dcs-wd-dcs-tc button:active,
+  .dcs-r-dcs-je-dcs-lf-dcs-l-dcs-qh,
+  .dcs-r-dcs-kf-dcs-lf-dcs-l-dcs-qh,
+  .dcs-j-dcs-l-dcs-xg {
+    background: #636363 !important;
+  }
+
+  /* Sheets bar */
+  .grid-bottom-bar {
+    background-color: #1A1A1A !important;
+  }
+
+  .docs-sheet-tab {
+    background-color: #222 !important;
+    color: #bbb !important;
+  }
+
+  .docs-sheet-tab-hover {
+    background-color: #444 !important;
+    color: #bbb !important;
+  }
+
+  .docs-sheet-active-tab {
+    background-color: #444 !important;
+    color: #bbb !important;
+  }
+
+}
+
+
+/* COMMON */
+
+@-moz-document /*[[theme_docs]]*/, /*[[theme_sheets]]*/ {
+
   /* Navigation and Menu */
   
   #docs-chrome {
@@ -296,131 +462,9 @@
   .goog-toolbar-button-hover, .goog-toolbar-menu-button-hover {
     background-image: -moz-linear-gradient(center top , #999, #9F9F9F);
   }
-
-  /* Equation toolbar */
-  .kix-equation-toolbar-icon, .kix-equation-toolbar-palette {
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
-  }
-
-  .kix-equation-toolbar-palette-item {
-    border-color: 1px solid #444 !important;
-  }
-  
-  /* Toolbar Menu Search */
-  .goog-toolbar {
-    background: #444 !important;
-  }
-  
-  .docs-omnibox-input {
-    background: #333 !important;
-    color: #aaa !important;
-  }
-  
-  .jfk-textinput {
-    border-color: #555 !important;
-  }
-  
-  .docs-omnibox-autocomplete .ac-renderer {
-    background: #555 !important;
-    box-shadow: 0 0 1px #444,
-                0 0 2px #444,
-                0 0 4px #444;
-    border: 1px solid #666 !important;
-  }
-  
-  .docs-omnibox-autocomplete .ac-active {
-    background: #333 !important;
-  }
   
   /* Popup menus */
   /* Will be implemented 6-8 weeks from whenever it is that you read this. */
-
-}
-
-
-@-moz-document /*[[theme_sheets]]*/ {
-
-  #\30 -grid-table-container > canvas/*:nth-child(3)*/ {
-
-    /*
-    Identity Matrix:
-    1 0 0 0 0
-    0 1 0 0 0
-    0 0 1 0 0
-    0 0 0 1 0
-
-    Inversion Matrix:
-    -1 0 0 0 1
-    0 -1 0 0 1
-    0 0 -1 0 1
-    0 0 0 1 0
-
-    Brightness Matrix:
-    0.33 0.33 0.33 0 0
-    0.33 0.33 0.33 0 0
-    0.33 0.33 0.33 0 0
-    0 0 0 1 0
-
-    Inverted Brightness Matrix:
-    -0.33 -0.33 -0.33 0 1
-    -0.33 -0.33 -0.33 0 1
-    -0.33 -0.33 -0.33 0 1
-    0 0 0 1 0
-
-    Inverted Brightness Matrix:
-    -0.33 -0.33 -0.33 0 1
-    -0.33 -0.33 -0.33 0 1
-    -0.33 -0.33 -0.33 0 1
-    0 0 0 1 0
-    (-0.33 -0.33 -0.33 0 1 -0.33 -0.33 -0.33 0 1 -0.33 -0.33 -0.33 0 1 0 0 0 1 0)
-    
-    Inverted Color Matrix...? I don't know what this is:
-    0 1 1 0 -1
-    1 0 1 0 -1
-    1 1 0 0 -1
-    0 0 0 1 0
-    (0 1 1 0 -1 1 0 1 0 -1 1 1 0 0 -1 0 0 0 1 0)
-
-    Luminance Inversion: 1 - (0.2126*R + 0.7152*G + 0.0722*B)   ( -0.2126 -0.7152 -0.0722  )
-
-    -1.2126 -0.7152 -0.0722 0 1.2126
-    -0.2126 -1.7152 -0.0722 0 1.7152
-    -0.2126 -0.7152 -1.0722 0 1.0722
-    0 0 0 1 0
-
-    -1.2126 -0.7152 -0.0722 0 1.2126    -0.2126 -1.7152 -0.0722 0 1.7152    -0.2126 -0.7152 -1.0722 0 1.0722 0 0 0 1 0
-    
-    Inversion = Identity + Brightness? - InvertedBrightness
-
-
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1.2126 -0.7152 -0.0722 0 1.2126    -0.2126 -1.7152 -0.0722 0 1.7152    -0.2126 -0.7152 -1.0722 0 1.0722 0 0 0 1 0'/></filter></svg>#invert");
-
-
-RGBA = (R,G,B,1-Lum) overlay background(0,0,0,1)
-
-Composition attempt
-    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='invert'><feColorMatrix result='invertedbrightness' in='SourceGraphic' type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0.33 0.33 0.33 1 0'/>   <feComposite in='SourceGraphic' in2='invertedbrightness' operator='arithmetic' k1='0' k2='1' k3='1' k4='0'/></filter></svg>#invert");
-
-Greyscale
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-0.33 -0.33 -0.33 0 1 -0.33 -0.33 -0.33 0 1 -0.33 -0.33 -0.33 0 1 0 0 0 1 0'/></filter></svg>#invert");
-    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='invert'><feColorMatrix in='SourceGraphic' type='matrix' values='-0.33 -0.33 -0.33 0 1 -0.33 -0.33 -0.33 0 1 -0.33 -0.33 -0.33 0 1 0 0 0 1 0'/></filter></svg>#invert");
-    */
-
-    
-    /*
-    Exploit background + opacity? Use alpha channel as luminance inversion? 
-    Doesn't actually work properly (black pixels stay black instead of being inverted into white).
-    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='brightnessInvert'><feColorMatrix in='SourceGraphic' type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -0.33 -0.33 -0.33 0 0.99'/></filter></svg>#brightnessInvert");*/
-
-
-
-/* */
-
- }
-
-  .grid-container {
-    background-color: #000 !important;
-  }
 
 }
 
