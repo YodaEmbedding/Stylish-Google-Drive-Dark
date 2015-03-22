@@ -29,27 +29,12 @@
   }
   
 /* Toolbar */
-  /* Quick hack */
   .a-R-K {
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
     -webkit-filter: invert(100%);
     
     background: #fdfdfd !important;
   }
-
-/*
-  .a-R-K {
-  	background: /*[[home_list_color]]* !important;
-  }
-
-  .a-k-Ra .a-pa-Ra-ye, .a-k-Ra .a-pa-Ra-Zi, /* Location *
-  .a-d-e /* Buttons * {
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
-    -webkit-filter: invert(100%);
-    
-    background: #fdfdfd !important;
-  }
-*/
   
 /* Files */
 /* List view */
@@ -357,7 +342,6 @@
   }
 
   .waffle-arguments-help-section-title {
-    /* background-color: #2a2a2a !important; */
     color: #777 !important;
   }
 
@@ -368,18 +352,6 @@
   /* Random white elements */
   .grid-shim-bottom {
     background-color: #636363 !important;
-  }
-
-  .gb_5,
-  .gbqfba:hover,
-  .dcs-j-dcs-l-dcs-qh,
-  .dcs-j-dcs-l-dcs-qh:active,
-  .dcs-j-dcs-l-dcs-we,
-  .dcs-vd-dcs-wd-dcs-tc button:active,
-  .dcs-r-dcs-je-dcs-lf-dcs-l-dcs-qh,
-  .dcs-r-dcs-kf-dcs-lf-dcs-l-dcs-qh,
-  .dcs-j-dcs-l-dcs-xg {
-    background: #636363 !important;
   }
 
   /* Sheets bar */
