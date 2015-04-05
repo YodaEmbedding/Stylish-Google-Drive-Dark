@@ -234,6 +234,7 @@
   /* Equation toolbar */
   .kix-equation-toolbar-icon, .kix-equation-toolbar-palette {
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
+    -webkit-filter: invert(100%);
   }
 
   .kix-equation-toolbar-palette-item {
@@ -385,6 +386,7 @@
 
   .docs-sheet-button-icon:hover {
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
+    -webkit-filter: invert(100%);
   }
 
   /* Tour button */
@@ -406,6 +408,7 @@
   /* See http://www.w3.org/TR/selectors/#lex */
   div[id*='grid-table-container'] > canvas {
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-0.8 0 0 0 0.84 0 -0.8 0 0 0.84 0 0 -0.8 0 0.84 0 0 0 1 0'/></filter></svg>#invert");
+    -webkit-filter: invert(90%);
   }
 
   .grid-container {
