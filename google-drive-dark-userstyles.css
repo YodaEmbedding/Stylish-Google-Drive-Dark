@@ -14,13 +14,13 @@
   }
 
 /* Header bar */
-  .gb_Xc .gb_5b {
+  .gb_Xc .gb_6b {
     /*home_sidebar_color*/
     background: /*[[home_sidebar_color]]*/ !important;
   }
 
   /* +<Google+ Username> */
-  #gb#gb a.gb_la, #gb#gb a.gb_ma {
+  #gb#gb a.gb_ma, #gb#gb span.gb_ma {
     color: #aaa !important;
   }
 
@@ -29,6 +29,7 @@
     background: #444 !important;
   }
 
+  /* Logo, icons */
   .gb_ga.gb_2 {
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
     -webkit-filter: invert(100%);
@@ -40,6 +41,9 @@
     -webkit-filter: invert(100%);
 
     background: #fdfdfd !important;
+
+    box-shadow: none !important;
+    border-bottom: 1px solid #F0F0F0 !important;
   }
 
 /* Files */
@@ -316,7 +320,16 @@
     color: #ddd !important;
   }
 
+  	/* Actual input box */
+  .cell-input {
+    background: #333 !important;
+    color: #ddd !important;
+  }
+
   .formula-content {
+    /* Increases brightness of text y = 1.2x + 0.2, then resaturates lost color */
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='1.2 0 0 0 0.2 0 1.2 0 0 0.2 0 0 1.2 0 0.2 0 0 0 1 0'/></filter></svg>#invert") saturate(200%);
+
     color: #DA64FF !important;
   }
 
@@ -449,8 +462,8 @@
   }
 
   .input-box {
-    background-color: #505050 !important;
-    color: #eee !important;
+    background-color: #333 !important;
+    /* color: #eee !important; */
   }
 
 }
