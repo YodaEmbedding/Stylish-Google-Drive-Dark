@@ -14,7 +14,7 @@
   }
 
 /* Header bar */
-  .gb_ce .gb_ld {
+  .gb_qf .gb_re {
     /*home_sidebar_color*/
     background: /*[[home_sidebar_color]]*/ !important;
   }
@@ -29,6 +29,12 @@
     background: #444 !important;
   }
 
+  /* Search bar inner search items */
+  .a-s-yd-Zj {
+    background-color: #333 !important;
+    color: #aaa !important;
+  }
+
   /* Logo, icons */
   .gb_ga.gb_2 {
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
@@ -36,9 +42,9 @@
   }
 
 /* Toolbar */
-  .a-R-K {
+  .a-D-B {
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
-    -webkit-filter: invert(100%);
+    -webkit-filter: invert(89%);
 
     background: #fdfdfd !important;
 
@@ -48,66 +54,67 @@
 
 /* Files */
 /* List view */
-  .a-u {
+  .a-t {
     /*home_list_color*/
     background: /*[[home_list_color]]*/ !important;
     color: #ddd !important;
   }
 
   /* List view folder background */
-  .a-u-m.a-u-yb-Oi {
+  .a-t-j.a-t-gc-xl {
     /*home_list_color*/
     background: /*[[home_list_color]]*/ !important;
   }
 
   /* List view sort bar */
-  .a-u-R {
+  .a-t-D {
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
-    -webkit-filter: invert(100%);
+    -webkit-filter: invert(85%);
 
     background: #fcfcfc !important;
   }
 
 /* Grid view */
   /* Grid view background */
-  .a-v-m {
+  .a-u-j {
   	background-color: #333333 !important;
   }
 
   /* Grid view folder tab */
-  .k-v-n-M-m {
+  .l-u-o-V-j {
     background-color: #272727 !important;
   }
 
   /* Grid view folder tab icon */
-  .k-v-n-d-m {
+  .l-u-o-c-j {
     background-color: #222222 !important;
   }
 
   /* Grid view selected folder tab */
-  .k-v-da .k-v-n-M-m {
+  .l-u-ha .l-u-o-V-j {
   	background-color: #4285F4 !important;
   }
 
   /* Grid view selected folder tab icon */
-  .k-v-da .k-v-n-d-m {
+  .l-u-ha .l-u-o-c-j {
   	background-color: #4285F4 !important;
   }
 
   /* Grid view document names */
-  .k-v-M {
+  .l-u-V {
     color: #ddd !important;
   }
 
 /* Left Sidebar */
-  .a-jb-Ha {
+  .a-qc-La,
+  .a-da-Mf-B-ji-j {
     /*home_sidebar_color*/
     background: /*[[home_sidebar_color]]*/ !important;
     color: #ddd !important;
   }
 
   /* Hovered item */
-  :not(.a-U-ag-da) > .a-U-H:hover {
+  :not(.a-U-ye-ha) > .a-U-J:hover {
     background: none !important;
   }
 
@@ -123,68 +130,68 @@
 
 /* Right sidebar */
   /* Sidebar Background */
-  .a-Ud-m {
+  .a-ub-j {
     /*home_sidebar_color*/
     background: /*[[home_sidebar_color]]*/ !important;
   }
 
   /* Document Title */
-  .a-ng-M-P {
+  .a-Mg-V-T {
     color: #ddd !important;
   }
 
   /* Selected Tab */
-  .a-Ud-N-K > .j-N-K > .j-N.j-N-da {
+  .a-ub-ra-B > .h-ra-B > .h-ra-ha {
     color: #aaa !important;
   }
 
   /* Unselected Tab */
-  .a-Ud-N-K > .j-N-K > .j-N {
+  .a-ub-ra-B > .h-ra-B > .h-ra {
     color: #888 !important;
   }
 
   /* Details Tab */
 
   /* Details Text */
-  .k-q-jc-Dj {
+  .a-q-Jc-bj {
     color: #ddd !important;
   }
 
   /* Activity Tab */
 
   /* Activity Content Background */
-  .w-t-m {
+  .y-E-j {
     background: #202020 !important;
   }
 
   /* Activity Content Headings ("Earlier this week") */
-  .w-y-Bd-M {
+  .y-C-Ed-V {
     color: #aaa !important;
   }
 
   /* Activity Content Heading - Scrolled up*/
-  .w-t-hq-R .w-y-Bd-M {
+  .y-E-gh-D .y-C-Ed-V {
     background: #202020 !important;
     opacity: 0.9 !important;
   }
 
   /* Activity Content */
-  .w-y {
+  .y-C {
     background-color: #333 !important;
   }
 
   /* Activity Content Document Names */
-  .w-y-q-m {
+  .y-C-q-j {
     color: #aaa !important;
   }
 
   /* Activity Content Dates */
-  .w-y-kr {
+  .y-C-at {
     color: #888 !important;
   }
 
   /* Activity Content Action ("You created an item in") */
-  .w-y-q-R {
+  .y-C-q-D {
     color: #aaa !important;
   }
 
@@ -532,3 +539,11 @@
 
 }
 
+
+/*
+Todo:
+  Popup menus
+  Drive Home -> Remove white borders
+  Fix spreadsheet canvas-inversion related issues
+
+*/
