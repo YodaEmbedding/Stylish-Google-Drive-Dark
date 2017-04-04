@@ -25,7 +25,6 @@
     color: #aaa !important;
   }
 
-  /* + */
   /* Search bar whole panel default background */
   #gb * {
     background: #333;
@@ -95,6 +94,15 @@
   .a-u-j {
   	background-color: #333333 !important;
   }
+  
+/*   Grid view. Item background */
+  .l-u-Ab-zb {
+	  background: #555 !important;
+  }  
+  .l-u-xb {
+	  background: #444 !important;
+  }
+  
 
   /* Grid view folder tab */
   .l-u-o-V-j {
