@@ -2,6 +2,7 @@
 
 
 
+/*[theme_drive]*/
 @-moz-document /*[[theme_drive]]*/ {
 
   html, body, .drive_main_page {
@@ -14,14 +15,20 @@
   }
 
 /* Header bar */
-  .gb_qf .gb_re {
-    /*home_sidebar_color*/
+  .gb_ad,
+  .gb_ce, .gb_de, .gb_ge, .gb_he, .gb_je, .gb_re, .gb_se, .gb_ue, .gb_we {
+    /*[home_sidebar_color]*/
     background: /*[[home_sidebar_color]]*/ !important;
   }
 
   /* +<Google+ Username> */
   #gb#gb a.gb_P, #gb#gb span.gb_P {
     color: #aaa !important;
+  }
+
+  /* Search bar whole panel default background */
+  #gb * {
+    background: #333;
   }
 
   /* Search bar outer box */
@@ -33,6 +40,12 @@
   .a-s-yd-Zj {
     background-color: #333 !important;
     color: #aaa !important;
+  }
+
+  /* Search bar dropdown button */
+  .gb_2d.a-nb-Va-d-Gk-M {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
+    -webkit-filter: invert(100%);
   }
 
   /* Logo, icons */
@@ -54,15 +67,18 @@
 
 /* Files */
 /* List view */
-  .a-t {
-    /*home_list_color*/
+  .a-t,
+  .a-t-cb span, /* + */
+  .a-gd-Oa-Tl /* + */
+  {
+    /*[home_list_color]*/
     background: /*[[home_list_color]]*/ !important;
-    color: #ddd !important;
+    color: #ccc !important;
   }
 
   /* List view folder background */
   .a-t-j.a-t-gc-xl {
-    /*home_list_color*/
+    /*[home_list_color]*/
     background: /*[[home_list_color]]*/ !important;
   }
 
@@ -78,6 +94,15 @@
   /* Grid view background */
   .a-u-j {
   	background-color: #333333 !important;
+  }
+
+  /* Grid view. Item background */
+  .l-u-Ab-zb {
+    background: #555 !important;
+  }
+
+  .l-u-xb {
+    background: #444 !important;
   }
 
   /* Grid view folder tab */
@@ -107,9 +132,14 @@
 
 /* Left Sidebar */
   .a-qc-La,
-  .a-da-Mf-B-ji-j {
-    /*home_sidebar_color*/
+  .a-da-Mf-B-ji-j,
+  [class^=a-U-J], /* list items */
+  .xd-cr-lv       /* storage used label */
+  {
+    /*[home_sidebar_color]*/
     background: /*[[home_sidebar_color]]*/ !important;
+    color: #ccc !important;
+    font-family: Arial !important;
     color: #ddd !important;
   }
 
@@ -130,8 +160,9 @@
 
 /* Right sidebar */
   /* Sidebar Background */
-  .a-ub-j {
-    /*home_sidebar_color*/
+  .a-ub-j,
+  .a-ub-Gd div {
+    /*[home_sidebar_color]*/
     background: /*[[home_sidebar_color]]*/ !important;
   }
 
@@ -153,8 +184,10 @@
   /* Details Tab */
 
   /* Details Text */
-  .a-q-Jc-bj {
-    color: #ddd !important;
+  .a-q-Jc-bj,
+  [class^=a-q-Ed-] *
+  {
+    color: #ccc !important;
   }
 
   /* Activity Tab */
@@ -180,9 +213,12 @@
     background-color: #333 !important;
   }
 
-  /* Activity Content Document Names */
-  .y-C-q-j {
-    color: #aaa !important;
+  /* Activity Content Document Names */  
+  .y-C-q-j,
+  .y-C-H-Sb,
+  .y-E-Xc-Ma-hi-r /* No recorded activity... label */
+  {
+    color: #ccc !important;
   }
 
   /* Activity Content Dates */
@@ -201,10 +237,16 @@
   	background-color: #444 !important;
   }
 
+  /* Storage usage */
+  .ml-pp * {
+    background-color: #333 !important;
+    color: #ccc !important;
+  }
+  
 }
 
 
-
+/*[theme_docs]*/
 @-moz-document /*[[theme_docs]]*/ {
 
   /* PAGE */
@@ -212,7 +254,7 @@
   .kix-page,
   /* .kix-page *, */
   .kix-page-content-wrapper {
-    /*page_bgrnd_color*/
+    /*[page_bgrnd_color]*/
     background: /*[[page_bgrnd_color]]*/ !important;
   }
 
@@ -223,17 +265,17 @@
 
   .kix-page span,
   .kix-wordhtmlgenerator-word-node {
-    /*normal_text_color*/
+    /*[normal_text_color]*/
     color: /*[[normal_text_color]]*/ !important;
   }
 
   .kix-cursor-caret {
     display: block !important;
 
-    /*caret_border_color*/
+    /*[caret_border_color]*/
     border-color: /*[[caret_border_color]]*/ !important;
 
-    /*caret_glow_color*/
+    /*[caret_glow_color]*/
     box-shadow: 0 0 0px /*[[caret_glow_color]]*/,
                 0 0 15px /*[[caret_glow_color]]*/,
                 0 0 50px /*[[caret_glow_color]]*/;
@@ -247,6 +289,7 @@
 
     /* Unique selector for .docs-ui-unprintable */
   .kix-paginateddocumentplugin > div:nth-child(3) {
+    /*[page_bgrnd_color]*/
     background: /*[[page_bgrnd_color]]*/ !important;
   }
 
@@ -314,7 +357,7 @@
 }
 
 
-
+/*[theme_sheets]*/
 @-moz-document /*[[theme_sheets]]*/ {
 
   /* Formula bar */
@@ -455,6 +498,7 @@
 
 }
 
+/*[theme_sheets_canvas]*/
 @-moz-document /*[[theme_sheets_canvas]]*/ {
 
   /* Canvas */
@@ -478,6 +522,8 @@
 
 /* COMMON */
 
+/*[theme_docs]*/
+/*[theme_sheets]*/
 @-moz-document /*[[theme_docs]]*/, /*[[theme_sheets]]*/ {
 
   /* Navigation and Menu */
