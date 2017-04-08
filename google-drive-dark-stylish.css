@@ -14,7 +14,8 @@
   }
 
 /* Header bar */
-  .gb_qf .gb_re {
+  .gb_ad,
+  .gb_ce, .gb_de, .gb_ge, .gb_he, .gb_je, .gb_re, .gb_se, .gb_ue, .gb_we {
     /*home_sidebar_color*/
     background: #404040 !important;
   }
@@ -24,6 +25,11 @@
     color: #aaa !important;
   }
 
+  /* Search bar whole panel default background */
+  #gb * {
+    background: #333;
+  }
+  
   /* Search bar outer box */
   .gbqfqw {
     background: #444 !important;
@@ -33,6 +39,12 @@
   .a-s-yd-Zj {
     background-color: #333 !important;
     color: #aaa !important;
+  }
+
+  /* Search bar dropdown button */
+  .gb_2d.a-nb-Va-d-Gk-M {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
+    -webkit-filter: invert(100%);
   }
 
   /* Logo, icons */
@@ -54,10 +66,13 @@
 
 /* Files */
 /* List view */
-  .a-t {
+  .a-t,
+  .a-t-cb span, /* + */
+  .a-gd-Oa-Tl /* + */
+  {
     /*home_list_color*/
     background: #333333 !important;
-    color: #ddd !important;
+    color: #ccc !important; /* + */
   }
 
   /* List view folder background */
@@ -79,6 +94,15 @@
   .a-u-j {
   	background-color: #333333 !important;
   }
+  
+/*   Grid view. Item background */
+  .l-u-Ab-zb {
+	  background: #555 !important;
+  }  
+  .l-u-xb {
+	  background: #444 !important;
+  }
+  
 
   /* Grid view folder tab */
   .l-u-o-V-j {
@@ -107,10 +131,14 @@
 
 /* Left Sidebar */
   .a-qc-La,
-  .a-da-Mf-B-ji-j {
+  .a-da-Mf-B-ji-j,
+  [class^=a-U-J] /* list items */,
+  .xd-cr-lv      /* storage used label */
+  {
     /*home_sidebar_color*/
-    background: #404040 !important;
-    color: #ddd !important;
+    background: #3a3a3a !important; /* + */
+    color: #ccc !important;         /* + */
+    font-family: Arial !important;  /* + */
   }
 
   /* Hovered item */
@@ -130,7 +158,9 @@
 
 /* Right sidebar */
   /* Sidebar Background */
-  .a-ub-j {
+  .a-ub-j,
+  .a-ub-Gd div /* + */
+  {
     /*home_sidebar_color*/
     background: #404040 !important;
   }
@@ -153,8 +183,10 @@
   /* Details Tab */
 
   /* Details Text */
-  .a-q-Jc-bj {
-    color: #ddd !important;
+  .a-q-Jc-bj,
+  [class^=a-q-Ed-] * /* + */
+  {
+    color: #ccc !important; /* + */
   }
 
   /* Activity Tab */
@@ -180,9 +212,12 @@
     background-color: #333 !important;
   }
 
-  /* Activity Content Document Names */
-  .y-C-q-j {
-    color: #aaa !important;
+  /* Activity Content Document Names */  
+  .y-C-q-j,
+  .y-C-H-Sb,
+  .y-E-Xc-Ma-hi-r /* No recorded activity... label */
+  {
+    color: #ccc !important; /* + */
   }
 
   /* Activity Content Dates */
@@ -199,6 +234,12 @@
   /* Google Photos message */
   .a-fa-vg-Q {
   	background-color: #444 !important;
+  }
+  
+  /* Storage usage */
+  .ml-pp * {
+    background-color: #333 !important;
+    color: #ccc !important;
   }
 
 }
