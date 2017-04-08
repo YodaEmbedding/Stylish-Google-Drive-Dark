@@ -44,20 +44,17 @@
 
   /* Search bar dropdown button */
   .gb_2d.a-nb-Va-d-Gk-M {
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
-    -webkit-filter: invert(100%);
+    filter: invert(1);
   }
 
   /* Logo, icons */
   .gb_ga.gb_2 {
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
-    -webkit-filter: invert(100%);
+    filter: invert(1);
   }
 
 /* Toolbar */
   .a-D-B {
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
-    -webkit-filter: invert(89%);
+    filter: invert(89%);
 
     background: #fdfdfd !important;
 
@@ -84,8 +81,7 @@
 
   /* List view sort bar */
   .a-t-D {
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
-    -webkit-filter: invert(85%);
+    filter: invert(85%);
 
     background: #fcfcfc !important;
   }
@@ -320,8 +316,7 @@
 
   /* Equation toolbar */
   .kix-equation-toolbar-icon, .kix-equation-toolbar-palette {
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
-    -webkit-filter: invert(100%);
+    filter: invert(1);
   }
 
   .kix-equation-toolbar-palette-item {
@@ -372,8 +367,7 @@
 
   	/* Actual input box */
   .cell-input {
-    background: #333 !important;
-    color: #ddd !important;
+    filter: invert(1);
   }
 
   .formula-content {
@@ -482,8 +476,7 @@
   }
 
   .docs-sheet-button-icon:hover {
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
-    -webkit-filter: invert(100%);
+    filter: invert(1);
   }
 
   /* Tour button */
@@ -504,8 +497,7 @@
   /* Canvas */
   /* See http://www.w3.org/TR/selectors/#lex */
   div[id*='grid-table-container'] > canvas {
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-0.8 0 0 0 0.84 0 -0.8 0 0 0.84 0 0 -0.8 0 0.84 0 0 0 1 0'/></filter></svg>#invert");
-    -webkit-filter: invert(90%);
+    filter: invert(90%);
   }
 
   .grid-container {
@@ -568,8 +560,7 @@
 
   .docs-icon-img:before {
     /* invert icon colors */
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
-    -webkit-filter: invert(100%);
+    filter: invert(1);
   }
 
   .goog-toolbar-button-selected, .goog-toolbar-button-checked, .goog-toolbar-menu-button-open {
