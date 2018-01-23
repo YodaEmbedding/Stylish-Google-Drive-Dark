@@ -22,3 +22,7 @@ This will generate a file called `stylish.css`, which can be copied into your br
  - Drive Home: Toolbar logo/user thumbnail invert
  - Sheets: Fix inverted colors
 
+ - Formatting
+ - Variables (i.e. ##docs-toolbar-wrapper and .goog-toolbar-button share #444)
+ - Usercss
+
