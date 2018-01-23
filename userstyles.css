@@ -9,7 +9,6 @@
   --home-list-color:    /*[[home_list_color]]*/;
 }
 
-/*[theme_drive]*/
 @-moz-document /*[[theme_drive]]*/ {
 
   html, body, .drive_main_page {
@@ -24,7 +23,6 @@
 /* Header bar */
   .gb_ad,
   .gb_ce, .gb_de, .gb_ge, .gb_he, .gb_je, .gb_re, .gb_se, .gb_ue, .gb_we {
-    /*[home_sidebar_color]*/
     background: var(--home-sidebar-color) !important;
   }
 
@@ -75,14 +73,12 @@
   .a-t-cb span, /* + */
   .a-gd-Oa-Tl /* + */
   {
-    /*[home_list_color]*/
     background: var(--home-list-color) !important;
     color: #ccc !important;
   }
 
   /* List view folder background */
   .a-t-j.a-t-gc-xl {
-    /*[home_list_color]*/
     background: var(--home-list-color) !important;
   }
 
@@ -139,7 +135,6 @@
   [class^=a-U-J], /* list items */
   .xd-cr-lv       /* storage used label */
   {
-    /*[home_sidebar_color]*/
     background: var(--home-sidebar-color) !important;
     color: #ccc !important;
     font-family: Arial !important;
@@ -164,7 +159,6 @@
   /* Sidebar Background */
   .a-ub-j,
   .a-ub-Gd div {
-    /*[home_sidebar_color]*/
     background: var(--home-sidebar-color) !important;
   }
 
@@ -248,7 +242,6 @@
 }
 
 
-/*[theme_docs]*/
 @-moz-document /*[[theme_docs]]*/ {
 
   /* PAGE */
@@ -256,7 +249,6 @@
   .kix-page,
   /* .kix-page *, */
   .kix-page-content-wrapper {
-    /*[page_bgrnd_color]*/
     background: var(--page-bgrnd-color) !important;
   }
 
@@ -269,17 +261,14 @@
   .kix-wordhtmlgenerator-word-node,
   .navigation-widget,
   .navigation-item-content {
-    /*[normal_text_color]*/
     color: var(--normal-text-color) !important;
   }
 
   .kix-cursor-caret {
     display: block !important;
 
-    /*[caret_border_color]*/
     border-color: var(--caret-border-color) !important;
 
-    /*[caret_glow_color]*/
     box-shadow: 0 0 0px  var(--caret-glow-color),
                 0 0 15px var(--caret-glow-color),
                 0 0 50px var(--caret-glow-color);
@@ -293,7 +282,6 @@
 
     /* Unique selector for .docs-ui-unprintable */
   .kix-paginateddocumentplugin > div:nth-child(3) {
-    /*[page_bgrnd_color]*/
     background: var(--page-bgrnd-color) !important;
   }
 
@@ -360,7 +348,6 @@
 }
 
 
-/*[theme_sheets]*/
 @-moz-document /*[[theme_sheets]]*/ {
 
   /* Formula bar */
@@ -499,7 +486,6 @@
 
 }
 
-/*[theme_sheets_canvas]*/
 @-moz-document /*[[theme_sheets_canvas]]*/ {
 
   /* Canvas */
@@ -522,8 +508,6 @@
 
 /* COMMON */
 
-/*[theme_docs]*/
-/*[theme_sheets]*/
 @-moz-document /*[[theme_docs]]*/, /*[[theme_sheets]]*/ {
 
   /* Navigation and Menu */
