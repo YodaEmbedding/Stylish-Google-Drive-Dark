@@ -260,7 +260,9 @@
   }
 
   .kix-page span,
-  .kix-wordhtmlgenerator-word-node {
+  .kix-wordhtmlgenerator-word-node,
+  .navigation-widget,
+  .navigation-item-content {
     /*[normal_text_color]*/
     color: /*[[normal_text_color]]*/ !important;
   }
