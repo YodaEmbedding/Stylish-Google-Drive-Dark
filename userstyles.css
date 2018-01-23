@@ -1,13 +1,17 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
-:root {
-  --page-bgrnd-color:   /*[[page_bgrnd_color]]*/;
-  --normal-text-color:  /*[[normal_text_color]]*/;
-  --caret-border-color: /*[[caret_border_color]]*/;
-  --caret-glow-color:   /*[[caret_glow_color]]*/;
-  --home-sidebar-color: /*[[home_sidebar_color]]*/;
-  --home-list-color:    /*[[home_list_color]]*/;
+
+@-moz-document /*[[theme_drive]]*/, /*[[theme_docs]]*/, /*[[theme_sheets]]*/, /*[[theme_sheets_canvas]]*/ {
+  :root {
+    --page-bgrnd-color:   /*[[page_bgrnd_color]]*/;
+    --normal-text-color:  /*[[normal_text_color]]*/;
+    --caret-border-color: /*[[caret_border_color]]*/;
+    --caret-glow-color:   /*[[caret_glow_color]]*/;
+    --home-sidebar-color: /*[[home_sidebar_color]]*/;
+    --home-list-color:    /*[[home_list_color]]*/;
+  }
 }
+
 
 @-moz-document /*[[theme_drive]]*/ {
 
