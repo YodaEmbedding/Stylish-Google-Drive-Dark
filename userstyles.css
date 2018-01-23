@@ -1,5 +1,13 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
+:root {
+  --page-bgrnd-color:   /*[[page_bgrnd_color]]*/;
+  --normal-text-color:  /*[[normal_text_color]]*/;
+  --caret-border-color: /*[[caret_border_color]]*/;
+  --caret-glow-color:   /*[[caret_glow_color]]*/;
+  --home-sidebar-color: /*[[home_sidebar_color]]*/;
+  --home-list-color:    /*[[home_list_color]]*/;
+}
 
 /*[theme_drive]*/
 @-moz-document /*[[theme_drive]]*/ {
@@ -17,7 +25,7 @@
   .gb_ad,
   .gb_ce, .gb_de, .gb_ge, .gb_he, .gb_je, .gb_re, .gb_se, .gb_ue, .gb_we {
     /*[home_sidebar_color]*/
-    background: /*[[home_sidebar_color]]*/ !important;
+    background: var(--home-sidebar-color) !important;
   }
 
   /* +<Google+ Username> */
@@ -68,14 +76,14 @@
   .a-gd-Oa-Tl /* + */
   {
     /*[home_list_color]*/
-    background: /*[[home_list_color]]*/ !important;
+    background: var(--home-list-color) !important;
     color: #ccc !important;
   }
 
   /* List view folder background */
   .a-t-j.a-t-gc-xl {
     /*[home_list_color]*/
-    background: /*[[home_list_color]]*/ !important;
+    background: var(--home-list-color) !important;
   }
 
   /* List view sort bar */
@@ -132,7 +140,7 @@
   .xd-cr-lv       /* storage used label */
   {
     /*[home_sidebar_color]*/
-    background: /*[[home_sidebar_color]]*/ !important;
+    background: var(--home-sidebar-color) !important;
     color: #ccc !important;
     font-family: Arial !important;
   }
@@ -157,7 +165,7 @@
   .a-ub-j,
   .a-ub-Gd div {
     /*[home_sidebar_color]*/
-    background: /*[[home_sidebar_color]]*/ !important;
+    background: var(--home-sidebar-color) !important;
   }
 
   /* Document Title */
@@ -249,7 +257,7 @@
   /* .kix-page *, */
   .kix-page-content-wrapper {
     /*[page_bgrnd_color]*/
-    background: /*[[page_bgrnd_color]]*/ !important;
+    background: var(--page-bgrnd-color) !important;
   }
 
   .kix-page-paginated,
@@ -262,19 +270,19 @@
   .navigation-widget,
   .navigation-item-content {
     /*[normal_text_color]*/
-    color: /*[[normal_text_color]]*/ !important;
+    color: var(--normal-text-color) !important;
   }
 
   .kix-cursor-caret {
     display: block !important;
 
     /*[caret_border_color]*/
-    border-color: /*[[caret_border_color]]*/ !important;
+    border-color: var(--caret-border-color) !important;
 
     /*[caret_glow_color]*/
-    box-shadow: 0 0 0px /*[[caret_glow_color]]*/,
-                0 0 15px /*[[caret_glow_color]]*/,
-                0 0 50px /*[[caret_glow_color]]*/;
+    box-shadow: 0 0 0px  var(--caret-glow-color),
+                0 0 15px var(--caret-glow-color),
+                0 0 50px var(--caret-glow-color);
   }
 
   /* Print Layout disabled fixes */
@@ -286,7 +294,7 @@
     /* Unique selector for .docs-ui-unprintable */
   .kix-paginateddocumentplugin > div:nth-child(3) {
     /*[page_bgrnd_color]*/
-    background: /*[[page_bgrnd_color]]*/ !important;
+    background: var(--page-bgrnd-color) !important;
   }
 
   /* Background */
