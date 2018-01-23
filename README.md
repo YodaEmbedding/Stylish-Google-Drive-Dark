@@ -1,10 +1,14 @@
 # Building
 
-To "build" a usable style, run:
+In order to allow the user customizations on userstyles.org, the file `userstyles.css` contains variables such as:
+
+    /*[[page_bgrnd_color]]*/
+
+To replace these with your customized values, edit `build.py` accordingly, and then run:
 
     python3 build.py
 
-This will generate a file called "stylish.css", which can be copied into your browser.
+This will generate a file called `stylish.css`, which can be copied into your browser.
 
 # Todo
 
