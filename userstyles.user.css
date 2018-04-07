@@ -1,4 +1,13 @@
-@namespace url(http://www.w3.org/1999/xhtml);
+/* ==UserStyle==
+@name           Google Drive Dark
+@version        1.0.0
+@description    Google Drive Dark theme for Stylish
+@namespace      http://www.w3.org/1999/xhtml
+@homepageURL 	https://github.com/SicariusNoctis/Stylish-Google-Drive-Dark
+@supportURL	https://github.com/SicariusNoctis/Stylish-Google-Drive-Dark/issues
+@author         muntoo
+@license 	GPL
+==/UserStyle== */
 
 
 @-moz-document /*[[theme_drive]]*/, /*[[theme_docs]]*/, /*[[theme_sheets]]*/, /*[[theme_sheets_canvas]]*/ {
@@ -93,7 +102,7 @@
     background: #fcfcfc !important;
   }
 
-/* Grid view */
+  /* Grid view */
   /* Grid view background */
   .a-u-j {
   	background-color: #333333 !important;
@@ -133,7 +142,7 @@
     color: #ddd !important;
   }
 
-/* Left Sidebar */
+  /* Left Sidebar */
   .a-qc-La,
   .a-da-Mf-B-ji-j,
   [class^=a-U-J], /* list items */
@@ -159,7 +168,7 @@
     color: #E9E5D4 !important;
   }
 
-/* Right sidebar */
+  /* Right sidebar */
   /* Sidebar Background */
   .a-ub-j,
   .a-ub-Gd div {
@@ -231,7 +240,7 @@
     color: #aaa !important;
   }
 
-/* Popup messages */
+  /* Popup messages */
   /* Google Photos message */
   .a-fa-vg-Q {
   	background-color: #444 !important;
@@ -312,6 +321,11 @@
     border-left: 1px solid #aaa !important;
   }
 
+  /* Embedded tables */
+  td.kix-tablerenderer-td {
+    border-color: blue !important;  
+  }
+    
   /* Navigation and Menu */
 
   /* Equation toolbar */
@@ -569,6 +583,5 @@
   .goog-toolbar-button-hover, .goog-toolbar-menu-button-hover {
     background-image: -moz-linear-gradient(center top , #999, #9F9F9F);
   }
-
 }
 

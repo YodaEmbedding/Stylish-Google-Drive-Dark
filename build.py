@@ -26,8 +26,8 @@ replacements = [
     ('/*[[home_list_color]]*/',     '#333333'),
 ]
 
-with open('userstyles.css', 'r') as f_in, \
-     open('stylish.css',    'w') as f_out:
+with open('userstyles.user.css', 'r') as f_in, \
+     open('stylish.user.css',    'w') as f_out:
 
     for line in f_in:
         for s, r in replacements:
