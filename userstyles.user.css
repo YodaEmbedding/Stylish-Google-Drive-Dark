@@ -35,7 +35,8 @@
 
 /* Header bar */
   .gb_ad,
-  .gb_ce, .gb_de, .gb_ge, .gb_he, .gb_je, .gb_re, .gb_se, .gb_ue, .gb_we {
+  .gb_ce, .gb_de, .gb_ge, .gb_he, .gb_je, .gb_re, .gb_se, .gb_ue, .gb_we,
+  .docs-material-appbar #docs-header .docs-titlebar-buttons {
     background: var(--home-sidebar-color) !important;
   }
 
