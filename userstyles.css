@@ -364,15 +364,14 @@
     color: #ddd !important;
   }
 
-  	/* Actual input box */
+  	/* Input box */
   .cell-input {
-    filter: invert(1);
+    filter: brightness(60%) saturate(250%) contrast(500%) invert(100%) hue-rotate(180deg);
   }
 
+    /* Input box: text only (pre-input box filter) */
   .formula-content {
-    /* Increases brightness of text y = 1.2x + 0.2, then resaturates lost color */
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='1.2 0 0 0 0.2 0 1.2 0 0 0.2 0 0 1.2 0 0.2 0 0 0 1 0'/></filter></svg>#invert") saturate(200%);
-
+    filter: contrast(80%);
     color: #DA64FF !important;
   }
 
@@ -495,7 +494,7 @@
   /* Canvas */
   /* See http://www.w3.org/TR/selectors/#lex */
   div[id*='grid-table-container'] > canvas {
-    filter: invert(90%);
+    filter: invert(90%) hue-rotate(180deg);
   }
 
   .grid-container {
