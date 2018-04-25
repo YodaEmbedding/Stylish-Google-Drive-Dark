@@ -29,14 +29,12 @@ Now, if you modify `userstyles.user.css` and run `build.py`, the changes will be
  - Docs: Darker ruler
  - Docs: Enable/disable userstyles.org option
  - Docs: Readable equations toolbar
- - Docs: https?://docs.google.com/document/u/\d+/
+ - Docs: `https?://docs.google.com/document/u/\d+/`
  - Drive Home: Borders
  - Drive Home: Enable/disable userstyles.org option
  - Drive Home: Hover highlights
  - Drive Home: Toolbar logo/user thumbnail invert
- - Sheets: Fix inverted colors
 
  - Formatting
- - Variables (i.e. ##docs-toolbar-wrapper and .goog-toolbar-button share #444)
- - ~~Usercss~~
+ - Move duplicate settings into variables (e.g. `##docs-toolbar-wrapper` and `.goog-toolbar-button` share the value `#444`)
 

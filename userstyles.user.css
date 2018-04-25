@@ -3,10 +3,10 @@
 @version        1.0.0
 @description    Google Drive Dark theme for Stylish
 @namespace      http://www.w3.org/1999/xhtml
-@homepageURL 	https://github.com/SicariusNoctis/Stylish-Google-Drive-Dark
-@supportURL	https://github.com/SicariusNoctis/Stylish-Google-Drive-Dark/issues
-@author         muntoo
-@license 	GPL
+@homepageURL    https://github.com/SicariusNoctis/Stylish-Google-Drive-Dark
+@supportURL     https://github.com/SicariusNoctis/Stylish-Google-Drive-Dark/issues
+@author         Mateen Ulhaq
+@license        GPL
 ==/UserStyle== */
 
 
@@ -105,7 +105,7 @@
   /* Grid view */
   /* Grid view background */
   .a-u-j {
-  	background-color: #333333 !important;
+    background-color: #333333 !important;
   }
 
   /* Grid view. Item background */
@@ -129,12 +129,12 @@
 
   /* Grid view selected folder tab */
   .l-u-ha .l-u-o-V-j {
-  	background-color: #4285F4 !important;
+    background-color: #4285F4 !important;
   }
 
   /* Grid view selected folder tab icon */
   .l-u-ha .l-u-o-c-j {
-  	background-color: #4285F4 !important;
+    background-color: #4285F4 !important;
   }
 
   /* Grid view document names */
@@ -243,7 +243,7 @@
   /* Popup messages */
   /* Google Photos message */
   .a-fa-vg-Q {
-  	background-color: #444 !important;
+    background-color: #444 !important;
   }
 
   /* Storage usage */
@@ -260,7 +260,6 @@
   /* PAGE */
 
   .kix-page,
-  /* .kix-page *, */
   .kix-page-content-wrapper {
     background: var(--page-bgrnd-color) !important;
   }
@@ -323,9 +322,9 @@
 
   /* Embedded tables */
   td.kix-tablerenderer-td {
-    border-color: #757575 !important;  
+    border-color: #757575 !important;
   }
-    
+
   /* Navigation and Menu */
 
   /* Equation toolbar */
@@ -378,7 +377,7 @@
     color: #ddd !important;
   }
 
-  	/* Input box */
+    /* Input box */
   .cell-input {
     filter: brightness(60%) saturate(250%) contrast(500%) invert(100%) hue-rotate(180deg);
   }
