@@ -537,6 +537,16 @@
     color: #999 !important;
   }
 
+  input {
+    background: var(--page-bgrnd-color) !important;
+    color: #777 !important;
+  }
+
+  .docs-title-input,
+  .docs-title-input:focus {
+    color: #777 !important;
+  }
+
   .docs-title-inner {
     color: #777 !important;
   }
