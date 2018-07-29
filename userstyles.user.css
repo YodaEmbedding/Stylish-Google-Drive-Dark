@@ -271,7 +271,10 @@
   }
 
   .kix-page span,
-  .kix-wordhtmlgenerator-word-node,
+  .kix-wordhtmlgenerator-word-node {
+    filter: invert(1) hue-rotate(180deg);
+  }
+
   .navigation-widget,
   .navigation-item-content {
     color: var(--normal-text-color) !important;
