@@ -551,6 +551,10 @@
     color: #777 !important;
   }
 
+  .docs-material #docs-header .docs-titlebar-buttons {
+    background-color: var(--page-bgrnd-color) !important;
+  }
+
   /* Toolbar strip */
 
   .goog-toolbar-separator.goog-inline-block {
