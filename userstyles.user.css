@@ -312,7 +312,7 @@
     border-bottom: none !important;
   }
 
-  .kix-ruler-background-inner {
+  .kix-ruler-background-inner, .kix-appview-editor {
     background: #444 !important;
   }
 
